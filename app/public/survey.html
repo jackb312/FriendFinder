@@ -151,24 +151,6 @@
         </div>
     </div>
     <script type="text/javascript">
-    var config = {
-        ".chosen-select": {},
-        ".chosen-select-deselect": {
-            allow_single_deselect: true
-        },
-        ".chosen-select-no-single": {
-            disable_search_threshold: 10
-        },
-        ".chosen-select-no-results": {
-            no_results_text: "Nothing found"
-        },
-        ".chosen-select-width": {
-            width: "95%"
-        }
-    };
-    for(var selector in config){
-        $(selector).chosen(config[selector]);
-    }
     $("#submit").on("click", function(event){
         event.preventDefault();
         function validate(){
@@ -216,11 +198,6 @@
                     $("#results-modal").modal("toggle");
                 }
             })
-            /*$.post("/api/friends", newFriend, function(data){
-                $("#match-name").text(data.name);
-                    $("#match-img").attr("src", data.photo);
-                    $("#results-modal").modal("toggle");
-            });*/
         }else{
             alert("All fields need to be filled in")
         }
