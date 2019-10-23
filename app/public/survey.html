@@ -2,17 +2,13 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 </head>
-<style>
-    img {
-        height: 50%;
-        width: 50%;
-    }
-</style>
 <body>
     <div class="container">
         <h2>Compatibility Questions</h2>
@@ -26,7 +22,7 @@
         <h3><strong>Question 1</strong></h3>
         <h4>You always have plans on the weekend</h4>
         <select class="chosen-select" id="q1">
-            <option value=""></option>
+            <option disabled selected value>Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -36,7 +32,7 @@
         <h3><strong>Question 2</strong></h3>
         <h4>You have lots of friends and does not like being alone</h4>
         <select class="chosen-select" id="q2">
-            <option value=""></option>
+            <option disabled selected value>Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -46,7 +42,7 @@
         <h3><strong>Question 3</strong></h3>
         <h4>Your friends and family would describe you as very outgoing</h4>
         <select class="chosen-select" id="q3">
-            <option value=""></option>
+            <option disabled selected value>Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -56,7 +52,7 @@
         <h3><strong>Question 4</strong></h3>
         <h4>You love the outdoors</h4>
         <select class="chosen-select" id="q4">
-            <option value=""></option>
+            <option disabled selected value>Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -66,7 +62,7 @@
         <h3><strong>Question 5</strong></h3>
         <h4>You are very competitive</h4>
         <select class="chosen-select" id="q5">
-            <option value=""></option>
+            <option disabled selected value>Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -76,7 +72,7 @@
         <h3><strong>Question 6</strong></h3>
         <h4>You love staying inside when you can</h4>
         <select class="chosen-select" id="q6">
-            <option value=""></option>
+            <option disabled selected value>Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -86,7 +82,7 @@
         <h3><strong>Question 7</strong></h3>
         <h4>You are a workaholic</h4>
         <select class="chosen-select" id="q7">
-            <option value=""></option>
+            <option disabled selected value>Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -96,7 +92,7 @@
         <h3><strong>Question 8</strong></h3>
         <h4>You are close with your family</h4>
         <select class="chosen-select" id="q8">
-            <option value=""></option>
+            <option disabled selected value>Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -106,7 +102,7 @@
         <h3><strong>Question 9</strong></h3>
         <h4>You are the life of every party</h4>
         <select class="chosen-select" id="q9">
-            <option value=""></option>
+            <option disabled selected value>Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -116,7 +112,7 @@
         <h3><strong>Question 10</strong></h3>
         <h4>You love being around lots of people</h4>
         <select class="chosen-select" id="q10">
-            <option value=""></option>
+            <option disabled selected value>Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -141,7 +137,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"></button>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
                     <h2 class="modal-title"><strong>Best Match</strong></h2>
                 </div>
                 <div class="modal-body">
@@ -155,7 +151,7 @@
         </div>
     </div>
     <script type="text/javascript">
-    var config = {
+    /*var config = {
         ".chosen-select": {},
         ".chosen-select-deselect": {
             allow_single_deselect: true
@@ -172,45 +168,59 @@
     };
     for(var selector in config){
         $(selector).chosen(config[selector]);
-    }
+    }*/
     $("#submit").on("click", function(event){
         event.preventDefault();
-        function validateForm(){
+        function validate(){
             var isValid = true;
             $(".form-control").each(function(){
-                if($(this).val()===""){
+                if($(this).val()==="" || $(this).val()===null){
                     isValid = false;
                 }
             });
             $(".chosen-select").each(function(){
-                if($(this).val()===""){
+                if($(this).val()===null || $(this).val()===""){
                     isValid = false;
                 }
             });
             return isValid;
         }
-        if(validateForm()){
-            var userData = {
+        if(validate()){
+            var score = [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val(),
+                ];
+                var newFriend = {
                 name: $("#name").val(),
                 photo: $("photo").val(),
-                scores: [
-                    $("q1").val(),
-                    $("q2").val(),
-                    $("q3").val(),
-                    $("q4").val(),
-                    $("q5").val(),
-                    $("q6").val(),
-                    $("q7").val(),
-                    $("q8").val(),
-                    $("q9").val(),
-                    $("q10").val(),
-                ]
+                scores: score
             };
-            $.post("/api/friends", userData, function(data){
+            console.log(newFriend);
+            $.ajax({
+                type: "POST",
+                data: newFriend,
+                url: "/api/friends",
+                success: function(res){
+                    console.log(res);
+                    alert("Data added");
+                    $("#match-name").text(res.name);
+                    $("#match-img").attr("src", res.photo);
+                    $("#results-modal").modal("toggle");
+                }
+            })
+            /*$.post("/api/friends", userData, function(data){
                 $("#match-name").text(data.name);
                     $("#match-img").attr("src", data.photo);
                     $("#results-modal").modal("toggle");
-            });
+            });*/
         }else{
             alert("All fields need to be filled in")
         }
